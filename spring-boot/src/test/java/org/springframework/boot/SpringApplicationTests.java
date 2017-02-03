@@ -130,21 +130,21 @@ public class SpringApplicationTests {
 
 	@After
 	public void reinstateHeadlessProperty() {
-		System.clearProperty("spring.main.banner-mode");
 		if (this.headlessProperty == null) {
 			System.clearProperty("java.awt.headless");
 		}
 		else {
 			System.setProperty("java.awt.headless", this.headlessProperty);
 		}
-
 	}
 
 	@After
-	public void close() {
+	public void cleanUp() {
 		if (this.context != null) {
 			this.context.close();
 		}
+		System.clearProperty("spring.main.banner-mode");
+		System.clearProperty(CachedIntrospectionResults.IGNORE_BEANINFO_PROPERTY_NAME);
 	}
 
 	@Test
@@ -258,7 +258,7 @@ public class SpringApplicationTests {
 	}
 
 	@Test
-	public void triggersConfigFileApplicationListenereBeforeBinding() throws Exception {
+	public void triggersConfigFileApplicationListenerBeforeBinding() throws Exception {
 		SpringApplication application = new SpringApplication(ExampleConfig.class);
 		application.setWebEnvironment(false);
 		this.context = application.run("--spring.config.name=bindtoapplication");

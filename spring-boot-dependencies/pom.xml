@@ -51,7 +51,7 @@
 		<appengine-sdk.version>1.9.48</appengine-sdk.version>
 		<artemis.version>1.5.2</artemis.version>
 		<aspectj.version>1.8.9</aspectj.version>
-		<assertj.version>2.6.0</assertj.version>
+		<assertj.version>3.6.2</assertj.version>
 		<atomikos.version>3.9.3</atomikos.version>
 		<bitronix.version>2.1.4</bitronix.version>
 		<byte-buddy.version>1.6.0</byte-buddy.version>
@@ -159,8 +159,8 @@
 		<spring-batch.version>4.0.0.BUILD-SNAPSHOT</spring-batch.version>
 		<spring-data-releasetrain.version>Kay-BUILD-SNAPSHOT</spring-data-releasetrain.version>
 		<spring-hateoas.version>0.23.0.RELEASE</spring-hateoas.version>
-		<spring-integration.version>5.0.0.M2</spring-integration.version>
-		<spring-kafka.version>1.1.2.RELEASE</spring-kafka.version>
+		<spring-integration.version>5.0.0.BUILD-SNAPSHOT</spring-integration.version>
+		<spring-kafka.version>2.0.0.BUILD-SNAPSHOT</spring-kafka.version>
 		<spring-ldap.version>2.3.1.RELEASE</spring-ldap.version>
 		<spring-loaded.version>1.2.6.RELEASE</spring-loaded.version>
 		<spring-mobile.version>2.0.0.M1</spring-mobile.version>
